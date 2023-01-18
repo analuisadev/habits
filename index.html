@@ -9,15 +9,38 @@
 </head>
 <body>
     <header>
-       <div class="header_content">
         <img src="assets/img/logo.svg" alt="Logo Dev Habits">
-       </div>
-       <div class="header_button">
-        <input type="button" value="Registrar meu dia" onclick="dayRegister() ">
-       </div>
+        <button onclick="dayRegister()"><img src="assets/img/plus.svg" alt="Logo Add">Registrar o meu dia</button>
     </header>
+    <form id="form-habits">
+        <div class="habits">
+            <div class="habit">📚</div>
+            <div class="habit">🍎</div>
+            <div class="habit">💧</div>
+            <div class="habit">💻</div>
+            <div class="habit">🤽🏻‍♀️</div>
+        </div>
 
+        <div class="days">
+            <div class="day">
+                <div>18/01</div>
+                <input type="checkbox" name="study">
+                <input type="checkbox" name="lunch">
+                <input type="checkbox" name="water">
+                <input type="checkbox" name="computer">
+                <input type="checkbox" name="playGame">
+            </div>
 
+             <div class="day">
+                <div>19/01</div>
+                <input type="checkbox" name="study">
+                <input type="checkbox" name="lunch">
+                <input type="checkbox" name="water">
+                <input type="checkbox" name="computer">
+                <input type="checkbox" name="playGame">
+            </div>
+        </div>
+    </form>
 
     <script src="assets/js/script.js"></script>
 </body>

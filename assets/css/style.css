@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -9,16 +9,94 @@
 :root {
     --bg-body: #09090A;
     --text-color: #FFFFFF; 
+    --border-button: #8B5CF6;
+    --border-input: #A78BFA;
+    --bg-input: #18181B;
+    --text-color-day: #A1A1AA;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
     background: var(--bg-body);
-    display: grid;
-    place-items: center;
     height: 100vh;
+    color: var(--text-color);
 }
 
-.header_content h1 {
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    border-radius: 8px;
+    padding: 16px 24px;
+    border: 1px solid var(--border-button);
+    background-color: transparent;
     color: var(--text-color);
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 125%;
+    gap: 12px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    padding: 0 48px;
+}
+
+.habits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 58px;
+}
+
+.habit {
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    margin-left: 32px;
+    display: flex;
+    gap: 48px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 20px;
+    line-height: 125%;
+    color: var(--text-color-day);
+    font-family: 'Roboto Mono';
+}
+
+.day div {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #27272A;
+    border-radius: 8px;
+    background-color: var(--bg-input);
+}
+
+input:checked {
+    background-color: var(--border-button);
+    border: 2px solid var(--border-input);
 }
