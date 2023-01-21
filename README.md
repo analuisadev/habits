@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Habits é uma aplicação que ajuda no rastramento de hábitos, trazendo uma forma criativa de registrar o seu desempenho.
 
-- [Acesse o projeto finalizado, online]()
+- [Acesse o projeto finalizado, online](https://analuisadev.github.io/habits/)
 
 ---
 ## :memo: Licença
