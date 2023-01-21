@@ -13,7 +13,7 @@ const dayRegister = () => {
   const dayExists = nlwSetup.dayExists(today)
 
   if (dayExists) {
-    return alert("Dia já adicionado")
+    return alert("Dia já adicionado!")
   }
 
   nlwSetup.addDay(today)
